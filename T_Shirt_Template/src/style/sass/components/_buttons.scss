@@ -1,0 +1,60 @@
+.btn{
+    border: none;
+    padding: 6px 8px;
+}
+
+.btn-dark{
+    background-color: var(--color_black);
+    color: var(--color_white);
+    transition: all 300ms;
+    &:hover{
+        background-color: var(--theme-color);
+    }
+}
+
+.btn-lg{
+    padding: 10px 16px;
+}
+
+//Slide Button
+.glide__arrows{
+    .glide__arrow{
+        border: none;
+        padding: 1.4rem 2rem;
+        font-size: (--small_font);
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 1rem 1rem;
+        position: relative;
+        background-color: var(--color_white);
+        color: var(--color_black);
+
+        &:hover{
+            background-color: var(--color_black);
+            color: var(--color_white);
+
+            .arrow{
+                color: var(--color_white);
+            }
+            
+        }
+        .arrow{
+            position: absolute;
+            line-height: 0;
+            font-size: 40px;
+            top: 50%;
+            color: var(--color_black);
+        }
+    }
+    .glide__arrow--left{
+        .arrow-prev{
+            left: -20px;
+            transform: rotate(180deg) ;
+        }
+    }
+    .glide__arrow--right{
+        .arrow-next{
+            right: -20px;
+        }
+    }
+}

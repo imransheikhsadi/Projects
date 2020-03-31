@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>T-Shirt Website</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
     <header class="header">
-        <div class="row">
-            <div class="site_logo col-12 col-md-4"></div>
-            <div class="navition_container col-12 col-md-8">
-                <div class="nav_top"></div>
+        <div class="row full-width no-gutters">
+            <div class="site_logo col-12 col-lg-3 d-flex bg-black">
+                <img class="mr-auto" src="./img/logo.jpg" alt="">
+            </div>
+            <div class="navigation_container col-12 col-lg-9">
+                <div class="nav_top d-flex justify-content-between align-items-center">
+                    <div class="number"><span class="material-icons">call</span> 01881576959</div>
+                    <div class="text_content">
+                        <ul class="d-flex">
+                            <li>English &#9660;</li>
+                            <li>USD &#9660;</li>
+                            <li>Wishlist(0)</li>
+                            <li>Login/Register</li>
+                        </ul>
+                    </div>
+                </div>
                 <nav class="main_nav">
                     <div class="nav_items">
                         <ul class="d-flex justify-content-between">
@@ -24,54 +37,79 @@
                             <li class="nav_item"><a href="#">CART</a></li>
                             <li class="nav_item"><a href="#">MY ACCOUNT</a></li>
                             <div class="search_container">
-                                seatch icon
-                                cart icon
+                                <span class="material-icons">search</span>
+                                <span class="material-icons">shopping_cart</span>
                             </div>
                         </ul>
                     </div>
-                    
+                    <div class="search_container--lg d-flex align-items-center mr-auto">
+                        <div class="search d-flex">
+                            <input type="search" placeholder="Search...">
+                            <button class="btn bg-black"><span class="material-icons color-white">search</span></button>
+                        </div>
+
+                        <span class="material-icons cart">shopping_cart</span>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <main>
         <section class="section_hero">
-            <div class="container">
+            <div class="container-full">
                 <div class="glide_container">
-                    <div class="glide">
+                    <div class="glide--One">
                         <div class="glide__track" data-glide-el="track">
                             <div class="glide__slides">
                                 <div class="glide__slide">
                                     <div class="glide_content">
-                                        <h4 class="sub-title">This is the sub title</h4>
-                                        <h2 class="glide-title">this is the main title</h2>
-                                        <p class="para"></p>
-                                        <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        <img src="./img/slide_hero/slider-1.jpg" alt="">
+                                        <div class="content">
+                                            <h4 class="sub-title">This is the sub title</h4>
+                                            <h2 class="glide-title">this is the main title</h2>
+                                            <p class="para">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Ipsa odio vero, hic odit ut quas consequuntur iusto voluptate commodi
+                                            </p>
+                                            <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="glide__slide">
                                     <div class="glide_content">
-                                        <h4 class="sub-title">This is the sub title</h4>
-                                        <h2 class="glide-title">this is the main title</h2>
-                                        <p class="para"></p>
-                                        <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        <img src="./img/slide_hero/slider-2.jpg" alt="">
+                                        <div class="content">
+                                            <h4 class="sub-title">This is the sub title</h4>
+                                            <h2 class="glide-title">this is the main title</h2>
+                                            <p class="para">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Ipsa odio vero, hic odit ut quas consequuntur iusto voluptate commodi
+                                            </p>
+                                            <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="glide__slide">
                                     <div class="glide_content">
-                                        <h4 class="sub-title">This is the sub title</h4>
-                                        <h2 class="glide-title">this is the main title</h2>
-                                        <p class="para"></p>
-                                        <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        <img src="./img/slide_hero/slider-3.jpg" alt="">
+                                        <div class="content">
+                                            <h4 class="sub-title">This is the sub title</h4>
+                                            <h2 class="glide-title">this is the main title</h2>
+                                            <p class="para">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Ipsa odio vero, hic odit ut quas consequuntur iusto voluptate commodi
+                                            </p>
+                                            <button class="btn btn-lg btn-dark">SHOP NOW</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">PREV <span
-                                    class="arrow arrow-prev">&#8592;</span></button>
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                                    class="material-icons arrow arrow-prev">arrow_right_alt</span>PREV </button>
                             <button class="glide__arrow glide__arrow--right" data-glide-dir=">">NEXT <span
-                                    class="arrow arrow-next">&#8594;</span></button>
+                                    class="material-icons arrow arrow-next">arrow_right_alt</span></button>
                         </div>
                     </div>
                 </div>

@@ -1,22 +1,130 @@
 .header{
+    z-index: 56;
+    width: 100%;
+    .row{
+        width: 100% !important;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     .site_logo{
-
+        padding: 2rem;
     }
     .navigation_container{
         .nav_top{
+            background-color: var(--color_white);
+            padding-right: 10%;
+            height: 40px;
 
+            .number{
+                padding: 0 2rem;
+                color: var(--color_gray);
+                font-size: var(--extra_small_font);
+                span{
+                    color: var(--color_black);
+                    font-size: var(--small_font);
+                }
+            }
+            .text_content{
+                color: var(--color_gray);
+                font-size: var(--extra_small_font);
+                li{
+                    margin: 0 1rem;
+                    transition: color 300ms;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--theme-color);
+                    }
+                }
+            }
+
+            @media (max-width: 530px) {
+                
+                padding-right: 0;
+                .number{
+                    display: none;
+                }
+                .text_content{
+                    width: 100%;
+                    ul{
+                        justify-content: space-evenly;
+                        width: 100%;
+                        li{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
         }
         .main_nav{
+            height: 10rem;
+            background-color: var(--theme-color);
+            padding-right: 10%;
+            padding-left: 3%;
+            display: flex;
+            color: var(--color_white);
+            // width: 90%;
+            
+           
+            .search_container--lg{
+                display: none !important;
+
+                input{
+                    padding-left: 2rem;
+                }
+
+                span{
+                    font-size: var(--medium_small);
+                    cursor: pointer; 
+                }
+                .cart{
+                    margin-left: 2rem;
+                    transition: color 300ms;
+
+                    &:hover{
+                        color: var(--color_black);
+                    }
+
+                }
+            }
             .nav_items{
+                align-items: center;
+                width: 100%;
+                margin: auto;
+                // height: 4rem;
                 ul{
                     .nav_item{
-                        
+                        a{
+                            font-size: var(--primary_font);
+                            color: var(--color_white);
+                            transition: color 300ms;
+                            &:hover{
+                                color: var(--color_black);
+                                font-weight: 600;
+                            }
+                        }
                     }
                 }
             }
 
             .search_container{
-                
+               span:first-child{
+                   padding-right: 3rem;
+               } 
+               span:hover{
+                   transition: 300ms;
+                   color: var(--color_black);
+               }
+            }
+
+            @media (max-width: 992px) {
+                .nav_items{
+                    display: none;
+                    
+                }
+                .search_container--lg{
+                    display: flex !important;
+                }
             }
         }
     }

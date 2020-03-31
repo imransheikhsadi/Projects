@@ -1,0 +1,57 @@
+.section_hero{
+
+    .container-full{
+
+        .glide_container{
+            position: relative;
+            .glide_content{
+                    position: relative;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: hidden;
+                img{
+                    z-index: -1;
+                    width: 1920px;
+                    min-height: 100%;
+                    height: 700px;
+                    position: absolute;
+                    top: 0;
+                    left: calc((100% / 2) - 960px);
+                }
+                .content{
+                    position: absolute;
+                    width: 30%;
+                    top: 50%;
+                    left: 15%;
+                    color: var(--color_white);
+                    font-family: 'Roboto', sans-serif;
+                    // transform: translate(-50%,-50%);
+
+                    .sub-title{
+                        font-size: var(--secondary_font);
+                        font-weight: 300;
+                    }
+                    .glide-title{
+                        text-transform: uppercase;
+                        font-size: var(--medium_small);
+                        margin: 1.5rem 0;
+                    }
+                    .para{
+                        font-size: var(--small_font);
+                        font-weight: 100;
+                        margin-bottom: 6rem;
+                    }
+
+                }
+            }
+
+            .glide__arrows{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60%;
+                right: 15%;
+            }
+        }
+    }
+}
