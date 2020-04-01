@@ -1,0 +1,31 @@
+.footer{
+    background-color: #1d2025;
+    text-align: center;
+    .container{
+        padding: 6rem;
+        color: white;
+        font-weight: lighter;
+        .site_logo{
+            margin: 3rem 0;
+        }
+        .para{
+            font-size: 1.4rem;
+            padding: 2rem;
+        }
+        .footer_nav{
+            margin: 3rem 0;
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright{
+        width: 100%;
+        background-color: white;
+        padding: 2rem;
+    }
+}

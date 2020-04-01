@@ -31,6 +31,10 @@
                         color: var(--color_black);
                         width: 11rem;
                         height: 11rem;
+                        @media (max-width: 500px) {
+                            width: 8rem;
+                            height: 8rem;
+                        }
                         border: 2px solid lightgray;
                         display: flex;
                         justify-content: center;
