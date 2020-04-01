@@ -7,13 +7,54 @@
     background-color: var(--color_black);
     color: var(--color_white);
     transition: all 300ms;
+    position: relative;
     &:hover{
         background-color: var(--theme-color);
+        &::before{
+            background-color: var(--color_black);
+        }
+    }
+
+    &::before{
+        content: '';
+        width: 20px;
+        height: 1px;
+        display: block;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+    }
+}
+
+.btn-theme{
+    background-color: var(--theme-color);
+    color: var(--color_white);
+    transition: all 300ms;
+    position: relative;
+    &:hover{
+        background-color: var(--color_black);
+        &::before{
+            background-color: var(--theme-color);
+        }
+    }
+
+    &::before{
+        content: '';
+        width: 15px;
+        height: 1px;
+        display: block;
+        background-color: var(--color_black);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
     }
 }
 
 .btn-lg{
-    padding: 10px 16px;
+    padding: 10px 20px;
 }
 
 //Slide Button
@@ -30,7 +71,7 @@
         color: var(--color_black);
 
         &:hover{
-            background-color: var(--color_black);
+            background-color: var(--theme-color);
             color: var(--color_white);
 
             .arrow{

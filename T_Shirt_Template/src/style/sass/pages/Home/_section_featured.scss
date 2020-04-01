@@ -1,0 +1,22 @@
+.section_feature,.section_best-selling{
+    margin: 10rem 0;
+    .glide_container{
+        margin: 2rem;
+        .glide_items{
+            .glide_item{
+                margin: 3rem 0;
+            }
+        }
+        .glide__arrows{
+            text-align: center;
+            .arrow{
+                color: var(--color_gray);
+            }
+            &:hover{
+                .arrow{
+                    color: var(--color_gray);
+                }
+            }
+        }
+    }
+}
