@@ -77,7 +77,7 @@
             .arrow{
                 color: var(--color_white);
             }
-            
+
         }
         .arrow{
             position: absolute;
@@ -98,4 +98,31 @@
             right: -20px;
         }
     }
+}
+
+.add_cart_button_container{
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  width: 100%;
+  // width: 100%;
+  .btn{
+    // display: block !important;
+  }
+  .added_to_cart,.wc-forward{
+    display: block;
+    background-color: gray;
+    color: white;
+    padding: 9px 8px;
+    font-size: 1.2rem;
+
+
+
+    &:hover{
+      background-color: lightgray;
+      color: black;
+    }
+  }
 }

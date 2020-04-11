@@ -20,6 +20,10 @@ li{
     text-decoration: none;
   }
 }
+a{
+  text-decoration: none;
+}
+
 input{
   border: none;
 }
@@ -29,3 +33,16 @@ input{
 p{
   font-size: var(--primary_font);
 }
+img{
+  max-width: none;
+  // display: inline;
+}
+.woocommerce{
+  font-size: 1.6rem;
+  .col-1, .col-2{
+  max-width:none !important;
+  }
+}
+// .right-sidebar{
+//   float: none;
+// }

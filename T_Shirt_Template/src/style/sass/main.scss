@@ -1,10 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+
+
+
 //Vendors
 @import "../../vendors/style/bootstrap-grid.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 //---------------
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
+
 
 
 @import "base/animations";
@@ -31,9 +36,3 @@
 @import "pages/Home/section_week_deal";
 @import "pages/Home/section_testimonial";
 @import "pages/Home/section_blog";
-
-
-
-
-
-

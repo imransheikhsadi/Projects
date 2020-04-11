@@ -7,14 +7,14 @@ module.exports = {
   entry: './src/script/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: '/srv/http/wp-content/themes/shopman'
   },
   // exclude: /(node_modules|bower_components)/,
-  mode: 'production',
+  mode: 'development',
   devServer: {
-    port: 5555,
-    open: true,
-    // writeToDisk: true
+    // port: 5555,
+    // open: true,
+    writeToDisk: true
   },
 
   //Shows the source file error line
@@ -55,7 +55,7 @@ module.exports = {
               },
               // by default it uses publicPath in webpackOptions.output
 
-              hmr: process.env.NODE_ENV === 'production',
+              hmr: process.env.NODE_ENV === 'development',
 
             },
           },
@@ -88,7 +88,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-    })
+    }),
   ],
 
 }
+// UGpQ4NaJ6wkJ5Lb
